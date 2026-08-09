@@ -1,0 +1,468 @@
+/* ---------- Reset ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+    font-size:18px;
+    line-height:1.7;
+
+    color:#171616;
+    background:#6c6a6a;
+}
+
+
+/* ---------- Layout ---------- */
+
+main,
+header,
+footer{
+
+    width:min(1200px,95%);
+    margin:auto;
+
+}
+
+
+/* ---------- Header---------- */
+
+
+.site-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    max-width:1100px;
+    margin:auto;
+
+    padding:20px 30px;
+
+}
+
+.site-header nav{
+     position:absolute;
+    top:20px;
+    right:100px;
+    display:flex;
+    gap:30px;
+
+}
+
+.site-header a{
+
+    text-decoration:none;
+    color:white;
+
+}
+
+.lang-switch{
+    position:absolute;
+    top:20px;
+    right:30px;
+
+    font-size:14px;
+}
+
+.lang-switch a{
+
+    color: white;
+    text-decoration:none;
+
+}
+.lang-switch a:hover{
+
+    text-decoration:underline;
+
+}
+
+.lang-switch strong{
+
+    color:#000;
+
+}
+
+.logo{
+
+    font-weight:700;
+    font-size:1.2rem;
+
+}
+.subtitle{
+
+    font-size:22px;
+
+    color:#666;
+
+    margin-bottom:35px;
+
+}
+
+ img{
+
+    width:100%;
+
+    border-radius:12px;
+
+    box-shadow:0 12px 40px rgba(0,0,0,.15);
+
+}
+
+
+/* ---------- Buttons ---------- */
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.button{
+
+    display:inline-block;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    color:#444;
+
+    background:#ececec;
+
+    transition:.2s;
+
+}
+
+.button:hover{
+
+    background:#dcdcdc;
+
+}
+
+.button.primary{
+    margin-top:20px;
+
+    background:#0066ff;
+
+    color:white;
+
+}
+
+.button.primary:hover{
+
+    background:#0055d8;
+
+}
+
+
+/* ---------- Navigation ---------- */
+
+.topnav{
+
+    display:flex;
+
+    gap:30px;
+
+    justify-content:center;
+
+    padding:20px 0;
+
+    margin-bottom:50px;
+
+    border-top:1px solid #ddd;
+
+    border-bottom:1px solid #ddd;
+
+    background:white;
+
+}
+
+.topnav  a{
+
+    text-decoration:none;
+
+    color:#444;
+
+    font-weight:600;
+
+}
+
+.topnav  a:hover{
+
+    color:#0066ff;
+
+}
+
+
+.bottom-nav{
+
+    display:flex;
+
+    gap:30px;
+
+    justify-content:center;
+
+    padding:20px 0;
+
+    margin-bottom:50px;
+
+    border-top:1px solid #ddd;
+
+    border-bottom:1px solid #ddd;
+
+    background:white;
+
+}
+
+.bottom-nav  a{
+
+    text-decoration:none;
+
+    color:#444;
+
+    font-weight:600;
+
+}
+
+.bottom-nav  a:hover{
+
+    color:#0066ff;
+
+}
+/* ---------- Sections ---------- */
+
+section{
+
+    margin:70px 0;
+
+}
+
+section h2{
+
+    font-size:34px;
+
+    margin-bottom:35px;
+
+}
+
+
+/* ---------- Cards ---------- */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+    transition:.25s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.card h3{
+
+    padding:20px 20px 10px;
+
+    font-size:24px;
+
+}
+
+.card p{
+
+    padding:0 20px 25px;
+
+}
+
+.card a{
+
+    text-decoration:none;
+
+    color:#222;
+
+}
+
+.card a:hover{
+
+    color:#0066ff;
+
+}
+
+
+/* ---------- Lists ---------- */
+
+
+
+.topics{
+
+    list-style:none;
+
+    padding:0;
+    margin:30px 0;
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+
+}
+
+.topics li{
+
+    flex:0 1 320px;
+
+    background:#fff;
+
+    border:1px solid #cfd6df;
+    border-radius:10px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+    transition:.2s;
+
+}
+
+.topics li:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 6px 16px rgba(0,0,0,.12);
+
+}
+
+.topics li a{
+
+    display:block;
+
+    padding:18px 22px;
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-size:1.15rem;
+    font-weight:600;
+
+}
+
+.chapter-content{
+  min-height:100vh;
+  display:block;
+  align-items:center;
+  justify-content:center;
+  color:white;
+}
+
+/* ---------- Book ---------- */
+
+.book{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:40px;
+    color:#333;
+
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+
+    margin:70px auto;
+
+    padding:30px 0;
+
+    text-align:center;
+
+    color:#888;
+
+    border-top:1px solid #ddd;
+
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width:900px){
+
+.hero{
+
+    grid-template-columns:1fr;
+
+}
+
+.hero-cover{
+
+    max-width:320px;
+
+    margin:auto;
+
+}
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+.subtitle{
+
+    font-size:20px;
+
+}
+
+.topnav{
+
+    flex-wrap:wrap;
+
+}
+
+}

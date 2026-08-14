@@ -238,6 +238,20 @@ View the Book on Apple Books
 © Sergey Krasnukha
 
 </footer>
-
+<script>
+(function () {
+    fetch("https://sksek.duckdns.org/counter/visit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            page: window.location.pathname,
+            referrer: document.referrer
+        }),
+        keepalive: true
+    }).catch(function () {});
+})();
+</script>
 </body>
 </html>

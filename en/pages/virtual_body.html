@@ -155,5 +155,19 @@ href="https://books.apple.com/us/book/who-am-i/id6799403111">
 </nav>
 
 </main>
-
+<script>
+(function () {
+    fetch("https://sksek.duckdns.org/counter/visit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            page: window.location.pathname,
+            referrer: document.referrer
+        }),
+        keepalive: true
+    }).catch(function () {});
+})();
+</script>
 </body>

@@ -164,6 +164,20 @@ href="https://books.apple.com/us/book/id6789138647">
 </nav>
 
 </main>
-
+<script>
+(function () {
+    fetch("https://sksek.duckdns.org/counter/visit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            page: window.location.pathname,
+            referrer: document.referrer
+        }),
+        keepalive: true
+    }).catch(function () {});
+})();
+</script>
 </body>
 </html>

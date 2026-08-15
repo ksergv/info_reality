@@ -49,6 +49,17 @@ YouTube
 
 </nav>
 
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 </header>
 
 <main class="page">
@@ -81,44 +92,156 @@ YouTube
 
 <p>The imaginary unit is denoted by <i>i</i> and satisfies the relation</p>
 
-<p><i>i</i><sup>2</sup> = −1.</p>
 
-<p>Now consider its complex conjugate.</p>
+<div class="formula">
+\[
+i^2=-1
+\]
+</div>
 
-<p>If</p>
+<p>
+Let's consider the complex conjugate number. If
+\(\psi=i\), then
+\(\psi^*=-i\).
+</p>
 
-<p>ψ = i, then ψ<sup>*</sup> = −i.</p>
+<p>
+Multiplying them:
+</p>
 
-<p>Now multiply them:</p>
+<div class="formula">
+\[
+\psi^*\psi=(-i)\cdot i
+\]
+</div>
 
-<p>(−i) · i.</p>
+<p>
+Rearranging the factors, we obtain
+</p>
 
-<p>Rearranging the factors gives</p>
+<div class="formula">
+\[
+-(i\cdot i)
+\]
+</div>
 
-<p>−(i · i).</p>
+<p>
+But
+</p>
 
-<p>But</p>
+<div class="formula">
+\[
+i\cdot i=i^2=-1
+\]
+</div>
 
-<p>(i · i) = i<sup>2</sup> = −1.</p>
+<p>
+Therefore,
 
-<p>Therefore</p>
+</p>
 
-<p>−(−1) = 1.</p>
+<div class="formula">
+\[
+-(-1)=1
+\]
+</div>
 
-<p>Thus, for any complex number</p>
+<p>
+For any complex number
+\(
+z=a+bi
+\),
+its complex conjugate has the form
+\(
+z^*=a-bi
+\).
+Their product is:
+</p>
 
-<p>z = a + bi</p>
+<div class="formula">
+\[
+z^*z=(a-bi)(a+bi)
+\]
+</div>
 
-<p>we obtain</p>
+<p>
+ Expanding the brackets, we obtain:
+</p>
 
-<p>z<sup>*</sup>z = (a − bi)(a + bi) = a<sup>2</sup> + b<sup>2</sup>,</p>
+<div class="formula">
+\[
+z^*z=a^2+abi-abi-b^2i^2
+\]
+</div>
 
-<p>which is always a non-negative real number.</p>
+<p>
+Since \(i^2=-1\), we have:
+</p>
 
-<p>Therefore, after evaluating</p>
+<div class="formula">
+\[
+z^*z=a^2+b^2
+\]
+</div>
 
-<p>|Ψ|<sup>2</sup> = Ψ<sup>*</sup>Ψ = A<sup>2</sup></p>
+<p>
+Therefore,
 
+</p>
+
+<div class="formula">
+\[
+\boxed{z^*z=a^2+b^2\geq0}
+\]
+</div>
+
+<p>
+ For the wave function
+\(\Psi=Ae^{i\phi}\)
+the complex conjugate function has the form:
+</p>
+
+<div class="formula">
+\[
+\Psi^*=Ae^{-i\phi}
+\]
+</div>
+
+<p>
+Therefore:
+</p>
+
+<div class="formula">
+\[
+|\Psi|^2=\Psi^*\Psi
+=
+Ae^{-i\phi}Ae^{i\phi}
+\]
+</div>
+
+<p>
+We obtain:
+</p>
+
+<div class="formula">
+\[
+|\Psi|^2
+=
+A^2e^{-i\phi}e^{i\phi}
+=
+A^2
+\]
+</div>
+
+<p>
+Therefore,
+</p>
+
+<div class="formula">
+\[
+\boxed{|\Psi|^2=A^2}
+\]
+</div>
 <p>the observable probability is obtained.</p>
 
 <p>If the Information Qubit continuously oscillates between the informational state and the quantum state, its description naturally gives rise to two mutually orthogonal components. One component corresponds to the informational state, while the other corresponds to the quantum state.</p>

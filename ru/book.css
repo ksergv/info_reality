@@ -268,18 +268,15 @@ section h2{
 
 /* ---------- Cards ---------- */
 
-.cards{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(auto-fit,minmax(280px,1fr));
-
-    gap:30px;
-
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .card{
+
+     width: 330px;
 
     background:white;
 
